@@ -45,13 +45,13 @@ Numerous performance benchmarks have illustrated the significant improvements th
 ### Future Evolution
 HTTP/2 sets the stage for the future of web communication protocols. Its adaptable architecture allows for the incorporation of new features and improvements, ensuring that it remains relevant and effective in meeting the evolving demands of the digital age.
 
-###Difference between HTTP/1.1 and HTTP/2 are:
+### Difference between HTTP/1.1 and HTTP/2 are:
 
 
 |             HTTP/1.1                                                                                               |                            HTTP/2                                |
 |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-|It works on the textual format                   |	It works on the binary protocol                                  |
-|There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources |	It allows multiplexing so one TCP connection is required for multiple requests.|
+|It works on the textual format                                                                                      |	It works on the binary protocol                                  |
+|There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources        | It allows multiplexing so one TCP connection is required for multiple requests.|
 |It uses requests resource Inlining for use getting multiple pages                                                   |	It uses PUSH frame by server that collects all multiple pages    |
 |It compresses data by itself.                                                                                       | 	It uses 'HPACK' for data compression.                           |
 
