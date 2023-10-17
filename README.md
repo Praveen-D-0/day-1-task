@@ -48,12 +48,12 @@ HTTP/2 sets the stage for the future of web communication protocols. Its adaptab
 ###Difference between HTTP/1.1 and HTTP/2 are:
 
 
-|             HTTP/1.1                            |                            HTTP/2                                |
-----------------------------------------------------------------------------------------------------------------------
+|             HTTP/1.1                                                                                               |                            HTTP/2                                |
+|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 |It works on the textual format                   |	It works on the binary protocol                                  |
-|There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources. |	It allows multiplexing so one TCP connection is required for multiple requests.|
-|It uses requests resource Inlining for use getting multiple pages |	It uses PUSH frame by server that collects all multiple pages|
-|It compresses data by itself.                     | 	It uses 'HPACK' for data compression.|
+|There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources |	It allows multiplexing so one TCP connection is required for multiple requests.|
+|It uses requests resource Inlining for use getting multiple pages                                                   |	It uses PUSH frame by server that collects all multiple pages    |
+|It compresses data by itself.                                                                                       | 	It uses 'HPACK' for data compression.                           |
 
 ### Conclusion
 In HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. While HTTP/2 has brought about monumental improvements, the journey doesn't end here. With HTTP/3 and beyond on the horizon, the trajectory of web communication to reach even greater heights, offering users faster, safer, and more efficient online experiences.
